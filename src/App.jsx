@@ -1,11 +1,12 @@
-
-import Navbar from "./components/Navbar"
-
+import Navbar from './components/Navbar/Navbar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 function App() {
   return (
-    Navbar()
-  )
+    <div>
+      <Navbar />
+      <ItemListContainer text="Bienvenido a la tienda mística" />
+    </div>
+  );
 }
 
-export default App
-
+export default App;
