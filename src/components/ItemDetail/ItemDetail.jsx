@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import ItemCount from '../ItemCount/ItemCount'; // <--- IMPORTANTE: Importar el componente
 import classes from './ItemDetail.module.css';
 
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
@@ -7,6 +8,10 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
 
     const handleBack = () => {
         navigate(-1);
+    };
+
+    const handleOnAdd = (quantity) => {
+        console.log('Cantidad agregada: ', quantity); //Pongo algo profe hasta que hagamos que sea funcional
     };
 
     return (
@@ -25,18 +30,11 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                 <p className={classes.description}>{description}</p>
                 <p className={classes.price}>${price}</p>
                 
-                <button style={{ 
-                    padding: '12px 25px', 
-                    backgroundColor: '#18293d', 
-                    color: 'white', 
-                    border: 'none', 
-                    borderRadius: '5px', 
-                    cursor: 'pointer',
-                    fontSize: '1rem',
-                    alignSelf: 'start'
-                }}>
-                    Agregar al Carrito
-                </button>
+                <ItemCount 
+                    initial={1} 
+                    stock={stock} 
+                    onAdd={handleOnAdd} 
+                />
             </section>
         </article>
     )

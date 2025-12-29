@@ -1,0 +1,64 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f4f4f4;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+    color: #18293d;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #18293d;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: color 0.2s;
+}
+
+.button:hover:not(:disabled) {
+    color: #d4af37;
+}
+
+.button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.addButton {
+    padding: 12px 30px;
+    background-color: #18293d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.addButton:hover:not(:disabled) {
+    background-color: #d4af37;
+    color: #18293d;
+}
+
+.addButton:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
