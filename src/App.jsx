@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/' element={<ItemListContainer text="Bienvenido a la tienda mística" />} />
+          <Route path='/' element={<ItemListContainer text="Bienvenido a Luz & Arcanos" />} />
           <Route path='/category/:categoryId' element={<ItemListContainer text="Categoría seleccionada" />} />
           <Route path='/item/:itemId' element={<ItemDetailContainer />} />
           <Route path='*' element={<h1>404 NOT FOUND</h1>} />
