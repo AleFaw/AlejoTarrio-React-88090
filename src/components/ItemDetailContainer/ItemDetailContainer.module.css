@@ -1,0 +1,12 @@
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.loading {
+    color: #18293d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.container {
+    padding: 50px;
+    text-align: center;
+}
+
+.title {
+    color: #18293d;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.loading {
+    color: #18293d;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
